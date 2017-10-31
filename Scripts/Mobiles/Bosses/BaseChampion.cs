@@ -204,7 +204,8 @@ namespace Server.Mobiles
             }
 
             // Randomize - Primers
-            for (int i = 0; i < toGive.Count; ++i)
+			// Pete commented out the below code as they are primers, ToL content
+            /*for (int i = 0; i < toGive.Count; ++i)
             {
                 int rand = Utility.Random(toGive.Count);
                 Mobile hold = toGive[i];
@@ -220,7 +221,7 @@ namespace Server.Mobiles
                 m.SendLocalizedMessage(1156209); // You have received a mastery primer!
 
                 GivePowerScrollTo(m, p, this);
-            }
+            }*/
         }
 
         public override bool OnBeforeDeath()
@@ -283,10 +284,10 @@ namespace Server.Mobiles
 
             return PowerScroll.CreateRandomNoCraft(level, level);
         }
-
-        private static SkillMasteryPrimer CreateRandomPrimer()
+		// Pete commented out code as this is primers for ToL content
+        /*private static SkillMasteryPrimer CreateRandomPrimer()
         {
             return SkillMasteryPrimer.GetRandom();
-        }
+        }*/
     }
 }

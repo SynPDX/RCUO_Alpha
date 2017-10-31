@@ -48,7 +48,7 @@ namespace Server.Mobiles
             
             this.PackItem(new SpidersSilk(8));
 
-            this.Tamable = true;
+            this.Tamable = false;
             this.ControlSlots = 3;
             this.MinTameSkill = 96.0;
         }

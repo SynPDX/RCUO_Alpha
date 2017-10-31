@@ -241,6 +241,7 @@ namespace Server.Misc
             }
 
             CityInfo city = GetStartLocation(args, young);
+            //CityInfo city = new CityInfo( "Britain", "Sweet Dreams Inn", 1496, 1628, 10, Map.Felucca);
 
             newChar.MoveToWorld(city.Location, city.Map);
 

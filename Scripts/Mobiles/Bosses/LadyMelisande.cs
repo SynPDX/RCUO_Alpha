@@ -68,7 +68,7 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             this.AddLoot(LootPack.SuperBoss, 8);
-            this.AddLoot(LootPack.Parrot, 1);
+            //this.AddLoot(LootPack.Parrot, 1);
         }
 
         public override void OnDeath(Container c)
@@ -85,18 +85,22 @@ namespace Server.Mobiles
 
             if (Utility.RandomDouble() < 0.6)
                 c.DropItem(new ParrotItem());
+			//Pete added this code to make hair dye more common
+			if (Utility.RandomDouble() < 0.5)
+				c.DropItem(new MelisandesHairDye());
+			//end Pete modification
 
             if (Utility.RandomDouble() < 0.2225)
             {
-                switch ( Utility.Random(3) )
+                switch ( Utility.Random(2) )
                 {
+                    //case 0:
+                    //    c.DropItem(new MelisandesHairDye());
+                    //    break;
                     case 0:
-                        c.DropItem(new MelisandesHairDye());
-                        break;
-                    case 1:
                         c.DropItem(new MelisandesCorrodedHatchet());
                         break;
-                    case 2:
+                    case 1:
                         c.DropItem(new AlbinoSquirrelImprisonedInCrystal());
                         break;
                 }

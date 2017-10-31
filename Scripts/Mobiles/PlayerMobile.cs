@@ -2161,7 +2161,7 @@ namespace Server.Mobiles
 				{
 					list.Add(new CallbackEntry(6201, ToggleItemInsurance));
 
-                    if (Core.SA)
+                    if (Core.ML)
                         list.Add(new CallbackEntry(1114299, new ContextCallback(OpenItemInsuranceMenu)));
                     else
                     {
@@ -4073,9 +4073,11 @@ namespace Server.Mobiles
 
 		public List<Mobile> PermaFlags { get { return m_PermaFlags; } }
 
-		public override int Luck { get { return AosAttributes.GetValue(this, AosAttribute.Luck); } }
+		//pete modification begin - This will show the luck bonus of TenthAnniversarySculpture, however players need to close, re-open their status window, still need to fix auto update
 
-        public int RealLuck { get { return Luck + TenthAnniversarySculpture.GetLuckBonus(this) + FountainOfFortune.GetLuckBonus(this); } }
+		public override int Luck { get { return AosAttributes.GetValue(this, AosAttribute.Luck) + TenthAnniversarySculpture.GetLuckBonus(this); } }
+
+        public int RealLuck { get { return Luck + FountainOfFortune.GetLuckBonus(this); } }
 
 		public override bool IsHarmfulCriminal(IDamageable damageable)
 		{

@@ -119,7 +119,7 @@ namespace Server.Mobiles
                 }
             }
 
-            this.NextWoolTime = DateTime.UtcNow + TimeSpan.FromHours(3.0); // TODO: Proper time delay
+            this.NextWoolTime = DateTime.UtcNow + TimeSpan.FromHours(0.25); // TODO: Proper time delay
         }
 
         public override void OnThink()

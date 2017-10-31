@@ -335,7 +335,7 @@ namespace Server.Items
             switch (Utility.Random(8))
             {
                 default:
-                case 0: return Map.Trammel;
+                case 0: return Map.Felucca;
                 case 1: return Map.Felucca;
                 case 2:
                 case 3: return Map.Ilshenar;

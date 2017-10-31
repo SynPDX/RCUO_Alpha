@@ -248,6 +248,7 @@
       <rect x="2200" y="1160" width="86" height="86" />
       <go x="2275" y="1210" z="0" />
       <music name="Cove" />
+	  <guards disabled="true" />
     </region>
     <region type="TownRegion" priority="50" name="Britain">
       <rect x="1416" y="1498" width="324" height="279" zmin="-10" />
@@ -1244,6 +1245,7 @@
       <go x="2275" y="1210" z="0" />
       <music name="Cove" />
       <zrange min="0" />
+	  <guards disabled="true" />
     </region>
     <region type="TownRegion" priority="50" name="Britain">
       <rect x="1416" y="1498" width="324" height="279" zmin="-10" />

@@ -465,7 +465,8 @@ namespace Server.Mobiles
         {
             get
             { 
-                if (BaseHouse.NewVendorSystem)
+                /* Temporary major discount on playervendors until server population rises
+				if (BaseHouse.NewVendorSystem)
                 {
                     return this.ChargePerRealWorldDay / 12;
                 }
@@ -483,13 +484,15 @@ namespace Server.Mobiles
                         total = 0;
 
                     return (int)(20 + (total / 500));
-                }
+                }*/
+				return (int) 0;
             }
         }
         public int ChargePerRealWorldDay
         {
             get
             {
+				/*
                 if (BaseHouse.NewVendorSystem)
                 {
                     long total = 0;
@@ -503,7 +506,8 @@ namespace Server.Mobiles
                 else
                 {
                     return this.ChargePerDay * 12;
-                }
+                }*/
+				return (int) 100;
             }
         }
         public static void TryToBuy(Item item, Mobile from)

@@ -297,13 +297,13 @@ namespace Server.Menus.Questions
 
                     Map destMap;
                     if (this.m_Mobile.Map == Map.Trammel)
-                        destMap = Map.Trammel;
+                        destMap = Map.Felucca;
                     else if (this.m_Mobile.Map == Map.Felucca)
                         destMap = Map.Felucca;
                     else if (m_Mobile.Map == Map.Internal)
-                        destMap = m_Mobile.LogoutMap == Map.Felucca ? Map.Felucca : Map.Trammel;
+                        destMap = m_Mobile.LogoutMap == Map.Felucca ? Map.Felucca : Map.Felucca;
                     else
-                        destMap = this.m_Mobile.Murderer ? Map.Felucca : Map.Trammel;
+                        destMap = this.m_Mobile.Murderer ? Map.Felucca : Map.Felucca;
 
                     if (m_Mobile.Map != Map.Internal)
                     {

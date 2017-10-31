@@ -105,7 +105,102 @@ namespace Server.Mobiles
  			{ 
  				max += 2;
  			}
- 
+			#region taming
+			//begin taming powerscroll bonuses
+			if (taming == 120.0)
+			{
+				max += 16;
+			}
+			
+			else if (taming > 115.0)
+			{
+				max += 13;
+			}
+			else if (taming > 110.0)
+			{
+				max += 10;
+			}
+
+			else if (taming > 105.0)
+			{
+				max += 7;
+			}
+			
+			else if (taming > 100.0)
+			{
+				max += 4;
+			}
+			//end taming powerscroll bonuses
+			if (taming == 100.0)
+			{
+				max += 1;
+			}
+			#endregion
+			#region animallore
+			//begin animallore powerscroll bonuses
+			if (anlore == 120.0)
+			{
+				max += 16;
+			}
+			
+			else if (anlore > 115.0)
+			{
+				max += 13;
+			}
+			else if (anlore > 110.0)
+			{
+				max += 10;
+			}
+
+			else if (anlore >105.0)
+			{
+				max += 7;
+			}
+			
+			else if (anlore > 100.0)
+			{
+				max += 4;
+			}
+			//end animallore powerscroll bonuses
+			if (anlore == 100.0)
+			{
+				max += 1;
+			}
+			#endregion
+			#region vet
+			//begin vet powerscroll bonuses
+			if (vetern == 120.0)
+			{
+				max += 16;
+			}
+			
+			else if (vetern > 115.0)
+			{
+				max += 13;
+			}
+			else if (vetern > 110.0)
+			{
+				max += 10;
+			}
+
+			else if (vetern > 105.0)
+			{
+				max += 7;
+			}
+			
+			else if (vetern > 100.0)
+			{
+				max += 4;
+			}
+			//end vet powerscroll bonuses
+			if (vetern == 100.0)
+			{
+				max += 1;
+			}
+			#endregion
+			
+
+			/* Commented out by Pete as we are running a custom taming reward system on RCUO, see code above
 			if (taming >= 100.0)
 			{
 				max += (int)((taming - 90.0) / 10);
@@ -119,7 +214,7 @@ namespace Server.Mobiles
 			if (vetern >= 100.0)
 			{
 				max += (int)((vetern - 90.0) / 10);
-			}
+			}*/
 
             return max + Server.Spells.SkillMasteries.MasteryInfo.BoardingSlotIncrease(from);
 		}

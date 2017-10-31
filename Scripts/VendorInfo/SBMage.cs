@@ -73,7 +73,7 @@ namespace Server.Mobiles
 
                 Type[] types = Loot.RegularScrollTypes;
 
-                int circles = 3;
+                int circles = 4;
 
                 for (int i = 0; i < circles * 8 && i < types.Length; ++i)
                 {

@@ -72,7 +72,7 @@ namespace Server.Engines.Help
                 this.AddHtml(110, 140, 450, 58, @"<u>General question about Ultima Online.</u> Select this option if you have a general gameplay question, need help learning to use a skill, or if you would like to search the UO Knowledge Base.", true, true);
 
                 this.AddButton(80, 205, 5540, 5541, 2, GumpButtonType.Reply, 0);
-                this.AddHtml(110, 205, 450, 58, @"<u>My character is physically stuck in the game.</u> This choice only covers cases where your character is physically stuck in a location they cannot move out of. This option will only work two times in 24 hours.", true, true);
+                this.AddHtml(110, 205, 450, 58, @"<u>My character is physically stuck in the game.</u> This choice only covers cases where your character is physically stuck in a location they cannot move out of. THIS OPTION WILL BRING YOU TO FELUCCA!", true, true);
 
                 this.AddButton(80, 270, 5540, 5541, 0, GumpButtonType.Page, 3);
                 this.AddHtml(110, 270, 450, 58, @"<u>Another player is harassing me.</u> Another player is verbally harassing your character. When you select this option you will be sending a text log to Origin Systems. To see what constitutes harassment please visit http://support.uo.com/gm_9.html.", true, true);
@@ -86,7 +86,7 @@ namespace Server.Engines.Help
                 this.AddHtml(110, 90, 450, 74, @"<u>General question about Ultima Online.</u> Select this option if you have a general gameplay question, need help learning to use a skill, or if you would like to search the UO Knowledge Base.", true, true);
 
                 this.AddButton(80, 170, 5540, 5541, 2, GumpButtonType.Reply, 0);
-                this.AddHtml(110, 170, 450, 74, @"<u>My character is physically stuck in the game.</u> This choice only covers cases where your character is physically stuck in a location they cannot move out of. This option will only work two times in 24 hours.", true, true);
+                this.AddHtml(110, 170, 450, 74, @"<u>My character is physically stuck in the game.</u> This choice only covers cases where your character is physically stuck in a location they cannot move out of. THIS OPTION WILL BRING YOU TO FELUCCA!", true, true);
 
                 this.AddButton(80, 250, 5540, 5541, 0, GumpButtonType.Page, 3);
                 this.AddHtml(110, 250, 450, 74, @"<u>Another player is harassing me.</u> Another player is verbally harassing your character. When you select this option you will be sending a text log to Origin Systems. To see what constitutes harassment please visit http://support.uo.com/gm_9.html.", true, true);

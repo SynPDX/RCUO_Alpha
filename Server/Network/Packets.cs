@@ -3553,11 +3553,16 @@ m_Stream.Write( (int) renderMode );
 				type = 6;
 				EnsureCapacity(121);
 			}
-			else if (Core.ML && ns != null && ns.SupportsExpansion(Expansion.ML))
+			/*else if (Core.ML && ns != null && ns.SupportsExpansion(Expansion.ML))
 			{
 				type = 5;
 				EnsureCapacity(91);
-			}
+			}*/
+			else if (Core.ML && ns != null && ns.ExtendedStatus)
+            {
+				type = 6;
+                EnsureCapacity(121);
+            }
 			else
 			{
 				type = Core.AOS ? 4 : 3;
@@ -3668,10 +3673,19 @@ m_Stream.Write( (int) renderMode );
                 type = 6;
                 EnsureCapacity(121);
             }
-            else if (Core.ML && ns != null && ns.SupportsExpansion(Expansion.ML))
+            
+			//OLD CODE
+			/*
+			else if (Core.ML && ns != null && ns.SupportsExpansion(Expansion.ML))
             {
-                type = 5;
+				type = 5;
                 EnsureCapacity(91);
+            }
+			*/
+			else if (Core.ML && ns != null && ns.ExtendedStatus)
+            {
+				type = 6;
+                EnsureCapacity(121);
             }
             else
             {
